@@ -15,50 +15,46 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Poppins:wght@600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header class="glass"
-        style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 1200px; z-index: 1000; padding: 15px 30px; display: flex; justify-content: space-between; align-items: center;">
-        <div class="logo"
-            style="font-family: var(--font-accent); font-weight: 700; font-size: 1.5rem; background: var(--primary-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
-            Vibe & AntiG
+    <header class="glass">
+        <div class="logo">
+            <a href="./">Vibe & AntiG</a>
         </div>
         <nav>
-            <ul style="list-style: none; display: flex; gap: 30px;">
-                <li><a href="#" style="color: white; text-decoration: none; font-weight: 600;">Home</a></li>
-                <li><a href="/vibe-coding.html" style="color: var(--text-muted); text-decoration: none;">Vibe Coding</a>
-                </li>
-                <li><a href="/antigravity.html" style="color: var(--text-muted); text-decoration: none;">Antigravity</a>
-                </li>
-                <li><a href="/about.html" style="color: var(--text-muted); text-decoration: none;">About</a></li>
+            <ul>
+                <li><a href="./" class="active">Home</a></li>
+                <li><a href="./vibe-coding.html">Vibe Coding</a></li>
+                <li><a href="./antigravity.html">Antigravity</a></li>
+                <li><a href="./about.html">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <main class="container">
+        <section class="hero" style="min-height: 70vh;">
             <h1>Sviluppa con il giusto Vibe.</h1>
             <p>Benvenuti nell'hub italiano dedicato all'innovazione. Scopri come il Vibe Coding e Antigravity stanno
                 rivoluzionando il modo in cui pensiamo al software.</p>
-            <div class="hero-btns" style="display: flex; gap: 20px;">
-                <button class="btn btn-primary" onclick="window.location.href='/vibe-coding.html'">Scopri di
+            <div class="hero-btns">
+                <button class="btn btn-primary" onclick="window.location.href='./vibe-coding.html'">Scopri di
                     più</button>
                 <button class="btn glass" style="color: white;">Ultimi Aggiornamenti</button>
             </div>
         </section>
 
         <!-- Sezione Video -->
-        <section style="padding: 60px 20px; max-width: 1000px; margin: 0 auto; text-align: center;">
-            <div class="glass" style="padding: 20px; position: relative; overflow: hidden;">
+        <section class="section-padding" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <div class="glass" style="position: relative; overflow: hidden;">
                 <h2
                     style="font-family: var(--font-accent); margin-bottom: 25px; font-size: 1.8rem; background: var(--primary-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                     La Fine della Programmazione?</h2>
                 <div
                     style="aspect-ratio: 16/9; width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
                     <video controls style="width: 100%; height: 100%; object-fit: cover;">
-                        <source src="/video/La_Fine_della_Programmazione_compressed.mp4" type="video/mp4">
+                        <source src="./video/La_Fine_della_Programmazione_compressed.mp4" type="video/mp4">
                         Il tuo browser non supporta il tag video.
                     </video>
                 </div>
@@ -67,81 +63,85 @@
             </div>
         </section>
 
-        <!-- Sezioni Introductive Semplificate -->
-        <section
-            style="padding: 100px 20px; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
-            <div class="glass" style="padding: 40px;">
+        <!-- Sezioni Introductive -->
+        <section class="section-padding"
+            style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px;">
+            <div class="glass">
                 <h2 style="font-family: var(--font-accent); margin-bottom: 20px; color: #10b981;">Cos'è il Vibe Coding?
                 </h2>
                 <p style="color: var(--text-muted); margin-bottom: 20px;">Un paradigma che mette al centro l'intuizione
                     e il flusso creativo dello sviluppatore, supportato da strumenti AI intelligenti.</p>
-                <a href="/vibe-coding.html"
+                <a href="./vibe-coding.html"
                     style="color: #10b981; text-decoration: none; font-weight: 600;">Approfondisci &rarr;</a>
             </div>
-            <div class="glass" style="padding: 40px;">
+            <div class="glass">
                 <h2 style="font-family: var(--font-accent); margin-bottom: 20px; color: #a855f7;">Cos'è Antigravity?
                 </h2>
                 <p style="color: var(--text-muted); margin-bottom: 20px;">Una metodologia che elimina l'attrito nello
-                    sviluppo, permettendo di costruire applicazioni complesse con una semplicità mai vista prima.</p>
-                <a href="/antigravity.html" style="color: #a855f7; text-decoration: none; font-weight: 600;">Esplora
+                    sviluppo, permettendo di costruire applicazioni complesse con semplicità.</p>
+                <a href="./antigravity.html" style="color: #a855f7; text-decoration: none; font-weight: 600;">Esplora
                     &rarr;</a>
             </div>
-            <!-- Sezione Blog Preview -->
-            <section style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
-                <h2 style="font-family: var(--font-accent); text-align: center; margin-bottom: 40px; font-size: 2rem;">
-                    Ultimi Aggiornamenti</h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-                    <!-- Articolo 1 -->
-                    <div class="glass"
-                        style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span
-                                style="color: #10b981; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Future</span>
-                            <h3 style="margin: 10px 0; font-size: 1.3rem;">Il futuro della programmazione creativa</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Dove saremo tra
-                                5 anni? Probabilmente programmeremo parlando...</p>
-                        </div>
-                        <a href="/blog/futuro-programmazione.html"
-                            style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Leggi di
-                            più &rarr;</a>
+        </section>
+        <!-- Sezione Blog Preview -->
+        <section style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-family: var(--font-accent); text-align: center; margin-bottom: 40px; font-size: 2rem;">
+                Ultimi Aggiornamenti</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <!-- Articolo 1 -->
+                <div class="glass"
+                    style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span
+                            style="color: #10b981; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Trend
+                            2026</span>
+                        <h3 style="margin: 10px 0; font-size: 1.3rem;">Adozione Enterprise: 40% delle App entro il
+                            2028</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Gartner prevede
+                            un'esplosione del Vibe Coding nelle aziende...</p>
                     </div>
-                    <!-- Articolo 2 -->
-                    <div class="glass"
-                        style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span
-                                style="color: #6366f1; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Opinion</span>
-                            <h3 style="margin: 10px 0; font-size: 1.3rem;">L'AI non sostituisce il dev</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">La realtà è che
-                                l'AI sta solo togliendo il lavoro noioso...</p>
-                        </div>
-                        <a href="/blog/ai-potenzia-dev.html"
-                            style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Leggi di
-                            più &rarr;</a>
-                    </div>
-                    <!-- Articolo 3 -->
-                    <div class="glass"
-                        style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span
-                                style="color: #f59e0b; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Tutorial</span>
-                            <h3 style="margin: 10px 0; font-size: 1.3rem;">5 Tool per iniziare oggi</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Ecco i 5
-                                strumenti che non possono mancare nel tuo workflow.</p>
-                        </div>
-                        <a href="/blog/5-tool-iniziare.html"
-                            style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Leggi di
-                            più &rarr;</a>
-                    </div>
+                    <a href="./blog/enterprise-vibe-coding-2026.html"
+                        style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Leggi di
+                        più &rarr;</a>
                 </div>
-            </section>
+                <!-- Articolo 2 -->
+                <div class="glass"
+                    style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span
+                            style="color: #ef4444; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Security</span>
+                        <h3 style="margin: 10px 0; font-size: 1.3rem;">Vulnerabilità nel Codice AI? Nuove Sfide</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Dall'attacco
+                            Amazon Q alla necessità di validazione umana...</p>
+                    </div>
+                    <a href="./blog/sicurezza-vibe-coding.html"
+                        style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Leggi di
+                        più &rarr;</a>
+                </div>
+                <!-- Articolo 3 -->
+                <div class="glass"
+                    style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <span
+                            style="color: #6366f1; font-weight: 600; font-size: 0.8rem; text-transform: uppercase;">Tool
+                            Update</span>
+                        <h3 style="margin: 10px 0; font-size: 1.3rem;">Lancio OpenAI Codex MacOS App</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">L'orchestratore
+                            definitivo che integra protocolli MCP...</p>
+                    </div>
+                    <a href="./blog/openai-codex-macos-app.html"
+                        style="color: white; text-decoration: none; font-weight: 600; font-size: 0.9rem;">Leggi di
+                        più &rarr;</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer style="padding: 60px 20px; text-align: center; border-top: 1px solid var(--glass-border);">
         <p style="color: var(--text-muted);">&copy; 2026 Vibe Coding & Antigravity. Creato con passione.</p>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>
