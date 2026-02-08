@@ -1,15 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Background -->
-  <rect width="100" height="100" rx="20" fill="#000000" />
-  <!-- Minimalist Rooster Icon -->
-  <!-- Body/Tail (White) -->
-  <path d="M20,60 Q30,40 50,40 Q70,40 80,60 L75,80 Q50,70 25,80 Z" fill="#ffffff" />
-  <!-- Head/Neck (White) -->
-  <path d="M50,40 Q45,20 60,15 Q75,10 70,30 Q65,40 50,40" fill="#ffffff" />
-  <!-- Crest/Comb (Red) -->
-  <path d="M60,15 Q65,5 75,5 Q80,10 75,20 Z" fill="#ef4444" />
-  <!-- Wattle (Red) -->
-  <path d="M65,30 Q70,35 60,35 Z" fill="#ef4444" />
-  <!-- Beak (Yellowish-Red) -->
-  <path d="M72,25 L80,30 L72,32 Z" fill="#f59e0b" />
+  <!-- Solid Black Background -->
+  <rect width="100" height="100" fill="#000000" />
+  
+  <!-- Bolder White Rooster Body -->
+  <path d="M25,75 L75,75 C75,75 85,60 75,45 C65,30 45,30 35,45 C25,60 25,75 25,75 Z" fill="#ffffff" />
+  
+  <!-- Bolder Head & Neck -->
+  <path d="M45,45 C45,30 55,20 65,25 C75,30 70,45 55,45 Z" fill="#ffffff" />
+  
+  <!-- Large Red Crest (Comb) -->
+  <path d="M55,25 C55,10 75,10 75,25 Z" fill="#ef4444" />
+  
+  <!-- Red Wattle -->
+  <path d="M65,40 C70,45 60,45 Z" fill="#ef4444" />
+  
+  <!-- Distinct Yellow Beak -->
+  <path d="M72,32 L82,38 L72,44 Z" fill="#fbbf24" />
 </svg>
