@@ -1,19 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Solid Black Background -->
   <rect width="100" height="100" fill="#000000" />
-  
-  <!-- Bolder White Rooster Body -->
-  <path d="M25,75 L75,75 C75,75 85,60 75,45 C65,30 45,30 35,45 C25,60 25,75 25,75 Z" fill="#ffffff" />
-  
-  <!-- Bolder Head & Neck -->
-  <path d="M45,45 C45,30 55,20 65,25 C75,30 70,45 55,45 Z" fill="#ffffff" />
-  
-  <!-- Large Red Crest (Comb) -->
-  <path d="M55,25 C55,10 75,10 75,25 Z" fill="#ef4444" />
-  
+  <!-- High-Contrast Iconic Rooster Profile -->
+  <!-- Body & Tail -->
+  <path d="M25,80 C5,80 5,30 35,25 C45,35 55,70 80,75 C80,85 40,90 25,80 Z" fill="#ffffff" />
+  <!-- Neck & Head -->
+  <path d="M55,75 L55,30 C55,10 85,15 85,40 L55,55 Z" fill="#ffffff" />
+  <!-- Large Red Comb (Crest) -->
+  <path d="M55,25 C50,5 85,0 95,25 C90,20 65,15 55,25 Z" fill="#ef4444" />
   <!-- Red Wattle -->
-  <path d="M65,40 C70,45 60,45 Z" fill="#ef4444" />
-  
-  <!-- Distinct Yellow Beak -->
-  <path d="M72,32 L82,38 L72,44 Z" fill="#fbbf24" />
+  <path d="M75,50 C80,60 65,60 65,50 Z" fill="#ef4444" />
+  <!-- Large Yellow Beak -->
+  <path d="M85,35 L98,45 L85,55 Z" fill="#fbbf24" />
 </svg>
