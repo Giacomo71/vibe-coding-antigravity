@@ -16,21 +16,24 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 </head>
 
 <body>
-    <header class="glass">
-        <div class="logo">
-            <a href="./">Vibe & AntiG</a>
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="./">Vibe & AntiG</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./" class="active">Home</a></li>
+                    <li><a href="./vibe-coding.html">Vibe Coding</a></li>
+                    <li><a href="./antigravity.html">Antigravity</a></li>
+                    <li><a href="./about.html">About</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="./" class="active">Home</a></li>
-                <li><a href="./vibe-coding.html">Vibe Coding</a></li>
-                <li><a href="./antigravity.html">Antigravity</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main class="container">
@@ -41,7 +44,9 @@
             <div class="hero-btns">
                 <button class="btn btn-primary" onclick="window.location.href='./vibe-coding.html'">Scopri di
                     più</button>
-                <button class="btn glass" style="color: white;">Ultimi Aggiornamenti</button>
+                <button class="btn glass" style="color: white;"
+                    onclick="document.getElementById('news').scrollIntoView({behavior: 'smooth'})">Ultimi
+                    Aggiornamenti</button>
             </div>
         </section>
 
@@ -79,13 +84,12 @@
                 </h2>
                 <p style="color: var(--text-muted); margin-bottom: 20px;">Una metodologia che elimina l'attrito nello
                     sviluppo, permettendo di costruire applicazioni complesse con semplicità.</p>
-                <a href="/vibe-coding-antigravity/antigravity.html"
-                    style="color: #a855f7; text-decoration: none; font-weight: 600;">Esplora
+                <a href="./antigravity.html" style="color: #a855f7; text-decoration: none; font-weight: 600;">Esplora
                     &rarr;</a>
             </div>
         </section>
         <!-- Sezione Blog Preview -->
-        <section style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+        <section id="news" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
             <h2 style="font-family: var(--font-accent); text-align: center; margin-bottom: 40px; font-size: 2rem;">
                 Ultimi Aggiornamenti</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
